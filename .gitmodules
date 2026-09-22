@@ -1,0 +1,33 @@
+[submodule "cctools-port"]
+	path = cctools-port
+	url = https://github.com/tpoechtrager/cctools-port
+[submodule "checkm8_bootkit"]
+	path = checkm8_bootkit
+	url = https://github.com/NyanSatan/checkm8_bootkit.git
+[submodule "DataProtection-noSEP"]
+	path = DataProtection-noSEP
+	url = https://github.com/TurtleARM/DataProtection-noSEP.git
+[submodule "gaster"]
+	path = gaster
+	url = https://github.com/0x7ff/gaster.git
+[submodule "iphone-dataprotection"]
+	path = iphone-dataprotection
+	url = https://github.com/nabla-c0d3/iphone-dataprotection
+[submodule "ipwndfu"]
+	path = ipwndfu
+	url = https://github.com/cfw-project/ipwndfu.git
+[submodule "ldid"]
+	path = ldid
+	url = https://github.com/ProcursusTeam/ldid
+[submodule "Legacy-IOS-Kit"]
+	path = Legacy-IOS-Kit
+	url = https://github.com/LukeZGD/Legacy-iOS-Kit
+[submodule "systembag.kb"]
+	path = systembag.kb
+	url = https://github.com/nt0xa/systembag.kb
+[submodule "xnu"]
+	path = xnu
+	url = https://github.com/apple-oss-distributions/xnu
+[submodule "binaries/bmwalters-binaries"]
+	path = binaries/bmwalters-binaries
+	url = https://gist.github.com/bmwalters/8f3cb4bc212231c4a7474938cae4fbd6.git

@@ -1,0 +1,10 @@
+diff --git a/ipwndfu b/ipwndfu
+index 836d915..cfcdfdb 100755
+--- a/ipwndfu
++++ b/ipwndfu
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/env python
+ # ipwndfu: open-source jailbreaking tool for older iOS devices
+ # Author: axi0mX
+ 

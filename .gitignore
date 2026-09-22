@@ -1,0 +1,53 @@
+# Full device filesystem dump — personal data (photos, keychain, containers), 33GB
+/dump/
+
+# Local-only staging area, never publish
+/DoNotUploadOnGithub/
+
+# Decrypted key material extracted from the real target device
+systembag.kb/keybag_decrypted
+dump/systembag_live.kb
+dump/systembag.kb.enc
+dump/iv_key.txt
+
+# Raw/patched Apple kernelcache and kext binaries — copyrighted Apple firmware,
+# only the patch logic (kernel_patch/do_patch.py, patches/*.diff) is published
+kernel_patch/kernelcache*.enc
+kernel_patch/kernelcache*.pack
+kernel_patch/kernelcache*.raw
+binaries/kernelcache.release.n42.orig
+/IOCryptoAcceleratorFamily.bin
+
+# Stale pre-rename leftover copy of ipwndfu from the project's original
+# ~/Code/iHack directory (before the rename to iHack2), superseded by
+# /ipwndfu — resolved, see CREDITS.md
+/iHack/
+
+# Abandoned tool (SSH Ramdisk_Maker 2.0): macOS-only (hdiutil, xpwntool,
+# iBoot32Patcher are Mach-O), never ran on Linux, replaced by Legacy-IOS-Kit's
+# own SSH ramdisk. Also bundles real Apple-signed iBSS firmware blobs —
+# resolved, see CREDITS.md
+/32bit-SSH-Ramdisk-0.2-Brute/
+
+# Loose armv7 build artifacts already covered by submodules/patches:
+# device_infos/restored_external are compiled output of
+# iphone-dataprotection/ramdisk_tools/{device_infos,restored_external}.c
+# (already in that submodule). bruteforce/lzssdec predate this documented
+# session with no traceable source — see CREDITS.md
+binaries/bruteforce
+binaries/device_infos
+binaries/restored_external
+binaries/lzssdec
+
+# Compiled build artifacts added on top of vendored clones
+gaster/gaster
+ldid/ldid_linux_x86_64
+*.pyc
+__pycache__/
+
+# Local backup/original files left over from editing
+*.orig
+
+# Personal-data-derived wordlists (real names, custom candidate lists)
+# folder content archived out locally; see wordlist/README.md
+.DS_Store

@@ -1,0 +1,29 @@
+diff --git a/keybag.py b/keybag.py
+index d7d654a..a70d2a1 100644
+--- a/keybag.py
++++ b/keybag.py
+@@ -1,11 +1,11 @@
+ # This is a generated file! Please edit source .ksy file and use kaitai-struct-compiler to rebuild
+ 
+-from pkg_resources import parse_version
++#from pkg_resources import parse_version
+ from kaitaistruct import __version__ as ks_version, KaitaiStruct, KaitaiStream, BytesIO
+ 
+ 
+-if parse_version(ks_version) < parse_version('0.7'):
+-    raise Exception("Incompatible Kaitai Struct Python API: 0.7 or later is required, but you have %s" % (ks_version))
++#if parse_version(ks_version) < parse_version('0.7'):
++#    raise Exception("Incompatible Kaitai Struct Python API: 0.7 or later is required, but you have %s" % (ks_version))
+ 
+ class Keybag(KaitaiStruct):
+     def __init__(self, _io, _parent=None, _root=None):
+diff --git a/parse_keybag.py b/parse_keybag.py
+index 6df725e..bfb4593 100755
+--- a/parse_keybag.py
++++ b/parse_keybag.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/env python
+ from argparse import ArgumentParser
+ from keybag import Keybag
+ from binascii import hexlify
